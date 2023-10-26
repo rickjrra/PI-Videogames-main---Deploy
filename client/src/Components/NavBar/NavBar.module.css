@@ -1,0 +1,15 @@
+.filAndOrd{
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 10%;
+    margin-top: 20px;
+    background: rgba(128, 128, 128, 0.7);
+}
+.navContainer{
+    background: none;
+    background: none;
+    
+}

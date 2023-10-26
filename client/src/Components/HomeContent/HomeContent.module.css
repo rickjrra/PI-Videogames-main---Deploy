@@ -1,0 +1,23 @@
+.row {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px; /* Ajusta el margen vertical entre las filas según tus preferencias */
+}
+
+.cardsContainer {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between; /* Cambia space-around a space-between */
+   width: 100%;
+   margin: 40px auto;
+   margin-left: 3%; /* Ajusta el margen izquierdo según tus preferencias */
+}
+
+.eachCard {
+   width: calc(33.33% - 3%); /* Cambia el ancho y el margen izquierdo para acomodar 3 tarjetas por fila */
+   box-sizing: border-box;
+}
+
+
+
+

@@ -1,0 +1,7 @@
+.homeContainer {
+    background-image: url('../../assets/img/Landing_Fondo.png');
+    position: absolute;
+    background-size: cover;
+    height: auto; /* Cambia esto a un valor más alto si es necesario */
+    width: 100%; /* El ancho del contenedor ocupa todo el ancho disponible */
+}

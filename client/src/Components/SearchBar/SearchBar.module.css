@@ -1,0 +1,57 @@
+/* styles.css (o tu archivo de estilos preferido) */
+
+.searchBarContainer {
+  background-color: #8dbae3; /* Cambiado a azul (#0074e4) */ 
+  border-radius: 10px; /* Bordes redondos */
+  padding: 10px;
+  width: 300px; /* Personaliza el ancho según tus necesidades */
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  color: white; /* Color de texto blanco */
+  font-weight: bold; /* Texto en negritas */
+  text-shadow: 2px 2px 4px gray; /* Sombreado gris (horizontal, vertical, desenfoque, color) */
+  margin-right: 10px; /* Espacio entre el label y el input */
+}
+
+.input {
+  border: none; /* Elimina el borde del input */
+  border-radius: 5px; /* Bordes redondos para el input */
+  padding: 5px;
+  flex: 1; /* Para que el input ocupe el espacio disponible */
+}
+
+/* NavBar.module.css */
+
+.button {
+  width: 30px; /* Ajusta el ancho del botón según tus necesidades */
+  height: 30px; /* Ajusta la altura del botón según tus necesidades */
+  background: url(./search.ico) center center no-repeat; /* Establece el icono como fondo */
+  background-size: cover; /* Hace que la imagen se adapte al tamaño del botón */
+  border: none; /* Elimina el borde del botón */
+  cursor: pointer;
+  text-indent: -9999px; /* Oculta el texto del botón */
+  margin-left: 10px; /* Añade un espacio de 10px a la izquierda del botón */
+  transition: background 0.3s; /* Agrega una transición suave a los cambios de fondo */
+
+  /* Agrega un sombreado gris cuando el puntero está sobre el botón */
+  background-color: none; /* Color de fondo del botón */
+}
+
+.button:hover {
+  background-color: #888; /* Cambia el color de fondo a gris cuando el puntero está sobre el botón */
+}
+
+.button:active {
+  background-color: #444; /* Cambia el color de fondo a un tono más oscuro cuando el botón está siendo pulsado */
+}
+
+
+
+
+/* Estilos adicionales según tus preferencias */
