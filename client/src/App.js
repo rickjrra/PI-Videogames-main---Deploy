@@ -4,6 +4,8 @@ import Landing from './views/Landing/Landing.jsx';
 import Home from './views/Home/Home.jsx';
 import GameDetail from './Components/GameDetail/GameDetail';
 import Form from './views/Form/Form';
+import axios from 'axios';
+axios.defaults.baseURL='http://localhost:3001/'
 
 function App() {
   return (

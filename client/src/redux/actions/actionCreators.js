@@ -8,7 +8,7 @@ import { GET_ALL_GAMES, ERROR, GET_GAME_BY_NAME, FILTER_BY_CREATION, FILTER_BY_G
 export const getAllGames = () => {
     return async (dispatch) => {
         try {
-            await axios.get(`http://localhost:3001/videogames`)
+            await axios.get(`/videogames`)
             .then((res) => {
                 return dispatch({ type: GET_ALL_GAMES, payload: res.data })
             })
@@ -25,7 +25,7 @@ export const getAllGames = () => {
 export const getGameByName = (name) => {
     return async (dispatch) => {
         try {
-            const game = await axios.get(`http://localhost:3001/videogames?name=${name}`);
+            const game = await axios.get(`/videogames?name=${name}`);
             const response = game.data;
             return dispatch({ type: GET_GAME_BY_NAME, payload: response });
         } catch (error) {
@@ -41,7 +41,7 @@ export const getGameByName = (name) => {
 export const getGameDetail = (idVideogame) => {
     return async (dispatch) => {
         try {
-            const response = await axios.get(`http://localhost:3001/videogames/${idVideogame}`);
+            const response = await axios.get(`/videogames/${idVideogame}`);
             const game = response.data;
             return dispatch({ type: GET_GAME_DETAIL, payload: game });
         } catch (error) {
@@ -62,7 +62,7 @@ export const clearDetail = () => {
 export const postNewGame = (game) => {
     return async (dispatch) => {
         try {
-            const response = await axios.post(`http://localhost:3001/videogames`,game);
+            const response = await axios.post(`/videogames`,game);
             return dispatch({ type: POST_NEW_GAME, payload: response });
         } catch (error) {
             return dispatch({
@@ -80,7 +80,7 @@ export const postNewGame = (game) => {
 export const getAllGenres = () => {
     return async (dispatch) => {
         try {
-            const response = await axios.get(`http://localhost:3001/genres`);
+            const response = await axios.get(`/genres`);
             const genres = response.data;
             return dispatch({ type: GET_ALL_GENRES, payload: genres });
         } catch (error) {
