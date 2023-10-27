@@ -150,9 +150,17 @@ const handleSubmit = (event) => {
 </div>
 
 <div className={style.container}>
-    <input type="text" id='image' value={form.background_image} name='background_image' onChange={(event) => handleChange(event)} className={style.inputtext} />
-    <label htmlFor="image" className={style.labeltext}>Imagen: </label> {/* Cambiado a "Imagen" */}
-    <p className={style.error}>{errors.background_image}</p>
+  <input
+    type="text"
+    id='image'
+    value={form.background_image}
+    name='background_image'
+    onChange={(event) => handleChange(event)}
+    className={style.inputtext}
+    placeholder="Escribe la URL de la imagen (jpg|jpeg|png|gif) aquí" // Agrega el atributo placeholder
+  />
+  <label htmlFor="image" className={style.labeltext}>Imagen: </label> {/* Cambiado a "Imagen" */}
+  <p className={style.error}>{errors.background_image}</p>
 </div>
 
 <div className={style.textareaContainer}>
